@@ -1,0 +1,4 @@
+libevent学习示例
+
+evdns是开发lddnet时写的，学习libevent的dns接口。
+
