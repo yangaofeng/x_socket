@@ -3,6 +3,7 @@
 #include <assert.h>
 #include <unistd.h>
 #include <pthread.h>
+#include <string.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <sys/epoll.h>
@@ -68,7 +69,12 @@ private:
 
 class EchoServer::Client {
 public:
-    Client(int fd, Worker *worker) : fd_(fd), worker_(worker) {}
+    Client(int fd, Worker *worker) 
+        : fd_(fd), 
+        event_(fd, this, HandleClientEvent),
+        worker_(worker)
+    {}
+
     ~Client() {
         if (fd_ != -1) {
             //fprintf(stdout, "close fd %d \n", fd_);
@@ -79,8 +85,7 @@ public:
 
     bool Init() {
         struct epoll_event ev;
-        ev.data.fd = fd_;
-        ev.data.ptr = static_cast<void *>(new EchoServer::Event(fd_, this, HandleClientEvent));
+        ev.data.ptr = (void *)&event_;
         ev.events = EPOLLIN | EPOLLET;
         epoll_ctl(worker_->epoll_fd_, EPOLL_CTL_ADD, fd_, &ev);
 
@@ -88,7 +93,7 @@ public:
     }
 
 private:
-    static void HandleClientEvent(int fd, short which, void *arg) {
+    static void HandleClientEvent(int fd, short int which, void *arg) {
         assert(arg != NULL);
 
         Client *cli = static_cast<Client *>(arg);
@@ -108,7 +113,7 @@ private:
                 break;
             }
 
-            int send_bytes = x_send(cli->fd_, BUFFER, BUFFER_SIZE);
+            int send_bytes = x_send(cli->fd_, (char *)BUFFER, BUFFER_SIZE);
             if (send_bytes != BUFFER_SIZE) {
                 //perror("echo message to client failed");
                 fprintf(stderr, "send_bytes = %d, BUFFER size=%ld\n", send_bytes, strlen(BUFFER));
@@ -129,6 +134,7 @@ private:
 
 private:
     int fd_;
+    Event event_;
     char buf_[1024];
     Worker *worker_;
 };
@@ -239,12 +245,6 @@ bool EchoServer::Worker::AddClient(int fd)
 
 bool EchoServer::Init()
 {
-    epoll_fd_ = epoll_create(MAXFDS);
-    if (epoll_fd_ == -1) {
-        perror("epoll_create error");
-        return false;
-    }
-
     //init main thread
     listen_fd_ = x_create_tcp_server("0.0.0.0", port_);
     if (listen_fd_ == -1) {

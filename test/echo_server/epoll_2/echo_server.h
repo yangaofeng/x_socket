@@ -6,6 +6,8 @@
 
 namespace echo_server {
 
+class Worker;
+
 class EchoServer{
 public:
     EchoServer(int port, int worker_count)
@@ -16,15 +18,9 @@ public:
 
     ~EchoServer();
 
-    typedef void(*EventHandler)(int fd, short int which, void *arg);
-
     bool Init();
     bool Run();
     void Close();
-
-    class Event;
-    class Worker;
-    class Client;
 
 private:
     int port_;
