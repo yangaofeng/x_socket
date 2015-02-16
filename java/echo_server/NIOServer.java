@@ -41,41 +41,41 @@ public class NIOServer {
      * @throws IOException
      */
     @SuppressWarnings("unchecked")
-        public void listen() throws IOException {
-            System.out.println("start success");
-            // 轮询访问selector
-            while (true) {
-                //当注册的事件到达时，方法返回；否则,该方法会一直阻塞
-                selector.select();
-                // 获得selector中选中的项的迭代器，选中的项为注册的事件
-                Iterator ite = this.selector.selectedKeys().iterator();
-                while (ite.hasNext()) {
-                    SelectionKey key = (SelectionKey) ite.next();
-                    // 删除已选的key,以防重复处理
-                    ite.remove();
-                    // 客户端请求连接事件
-                    if (key.isAcceptable()) {
-                        ServerSocketChannel server = (ServerSocketChannel) key
-                            .channel();
-                        // 获得和客户端连接的通道
-                        SocketChannel channel = server.accept();
-                        // 设置成非阻塞
-                        channel.configureBlocking(false);
+    public void listen() throws IOException {
+        System.out.println("start success");
+        // 轮询访问selector
+        while (true) {
+            //当注册的事件到达时，方法返回；否则,该方法会一直阻塞
+            selector.select();
+            // 获得selector中选中的项的迭代器，选中的项为注册的事件
+            Iterator ite = this.selector.selectedKeys().iterator();
+            while (ite.hasNext()) {
+                SelectionKey key = (SelectionKey) ite.next();
+                // 删除已选的key,以防重复处理
+                ite.remove();
+                // 客户端请求连接事件
+                if (key.isAcceptable()) {
+                    ServerSocketChannel server = (ServerSocketChannel) key
+                        .channel();
+                    // 获得和客户端连接的通道
+                    SocketChannel channel = server.accept();
+                    // 设置成非阻塞
+                    channel.configureBlocking(false);
 
-                        //在这里可以给客户端发送信息哦
-                        channel.write(ByteBuffer.wrap(new String("Hello World").getBytes()));
-                        //在和客户端连接成功之后，为了可以接收到客户端的信息，需要给通道设置读的权限。
-                        channel.register(this.selector, SelectionKey.OP_READ);
+                    //在这里可以给客户端发送信息哦
+                    channel.write(ByteBuffer.wrap(new String("Hello World").getBytes()));
+                    //在和客户端连接成功之后，为了可以接收到客户端的信息，需要给通道设置读的权限。
+                    channel.register(this.selector, SelectionKey.OP_READ);
 
-                        // 获得了可读的事件
-                    } else if (key.isReadable()) {
-                        read(key);
-                    }
-
+                    // 获得了可读的事件
+                } else if (key.isReadable()) {
+                    read(key);
                 }
 
             }
+
         }
+    }
     /**
      * 处理读取客户端发来的信息 的事件
      * @param key

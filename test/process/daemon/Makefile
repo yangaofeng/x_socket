@@ -1,6 +1,6 @@
 SRC=$(wildcard *.cc)
 OBJ=$(SRC:%.cc=%.o)
-TARGET=hello
+TARGET=test
 
 
 CXXFLAGS := -g -O0 -I./

@@ -74,7 +74,7 @@ public:
     virtual void Update(const TimeDiff& t, bool repeated);
 
 private:
-    TimeDiff time_diff_;
+    TimeDiff time_;
     Handler handler_;
     bool repeated_;
 };
@@ -111,6 +111,8 @@ public:
     bool DelTimer();
 
 private:
+    friend class TimerWatcher;
+
     int epfd_;
     bool owner_epfd_;
 

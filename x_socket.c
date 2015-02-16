@@ -25,7 +25,8 @@ void x_set_sock_default_opt(int s)
 	}
 	
 	on = 1;
-	result = setsockopt(s, SOL_SOCKET, SO_KEEPALIVE, (char *)&on, sizeof(on)); //keep alive in TCP connection
+    //keep alive in TCP connection
+	result = setsockopt(s, SOL_SOCKET, SO_KEEPALIVE, (char *)&on, sizeof(on)); 
 	
 	//设置SO_LINGER选项(防范CLOSE_WAIT挂住所有套接字, 强行关闭)
 	struct linger optval;
@@ -94,8 +95,7 @@ int x_create_tcp_server(const char *ip, int port)
 	addr.sin_family = AF_INET;
 	if (strcmp(ip, "0.0.0.0") == 0) {
 		addr.sin_addr.s_addr = INADDR_ANY; //htonl(INADDR_ANY);
-	}
-	else {
+	} else {
 		addr.sin_addr.s_addr = inet_addr( ip );
 	}
 	addr.sin_port = htons( port );
@@ -136,8 +136,10 @@ int x_create_tcp_client(const char *ip, int port)
 	}
 
 	on = 1;
-	result = setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, (char*)&on, sizeof(on)); //not use Nagle delay algorithm
-	result = setsockopt(fd, SOL_SOCKET, SO_KEEPALIVE, (char*) & on, sizeof(on)); //keep alive in TCP connection
+    //not use Nagle delay algorithm
+	result = setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, (char*)&on, sizeof(on)); 
+    //keep alive in TCP connection
+	result = setsockopt(fd, SOL_SOCKET, SO_KEEPALIVE, (char*) & on, sizeof(on)); 
 
 	addr.sin_family = AF_INET;
 	addr.sin_addr.s_addr = inet_addr(ip);
@@ -220,14 +222,11 @@ ReSend:
 		if ( bytes > 0 ) {
 			length -= bytes;
 			buf += bytes;
-		}
-
-		else if (bytes == -1) {
+		} else if (bytes == -1) {
 			if (errno == EINTR) {
 				goto ReSend;
 			}
-		}
-		else {
+		} else {
 			if (errno == EINTR || errno == EAGAIN) {
 				goto ReSend;
 			}
@@ -257,7 +256,6 @@ int x_recv(int fd, char *buf, int len)
 
 	int length = len;
 	do {
-
 		bytes = recv(fd, buf, length, 0);
 		if ( bytes > 0 ) {
 			length -= bytes;
@@ -303,8 +301,7 @@ int x_recv_with_timeout(int fd, char *buf, int len, int timeout)
 		if ( retval == 0 ) {
 			//SAY( DP_DEBUG6, "<SYSTEM_WARN> Socket timeout when recving data\n" );
 			break;
-		}
-		else if ( retval < 0 ) {
+		} else if ( retval < 0 ) {
 			if ( errno == EINTR ) {
 				continue; // capture a signal
 			}
@@ -316,11 +313,9 @@ int x_recv_with_timeout(int fd, char *buf, int len, int timeout)
 		if (bytes > 0) {
 			length -= bytes;
 			buf += bytes;
-		}
-		else if ( bytes == 0 ) { // the peer has performed an orderly shutdown.
+		} else if ( bytes == 0 ) { // the peer has performed an orderly shutdown.
 			break;
-		}
-		else if (bytes == -1) {
+		} else if (bytes == -1) {
 			if ( errno == EINTR || errno == EAGAIN ) { // error occur, bytes<0
 				continue;
 			}
@@ -328,7 +323,6 @@ int x_recv_with_timeout(int fd, char *buf, int len, int timeout)
 			return -1;// socket error
 		}
 	}
-		
 
 	bytes = len - length;
 	
