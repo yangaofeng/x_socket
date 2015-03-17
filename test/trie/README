@@ -1,0 +1,9 @@
+url: http://zh.wikipedia.org/wiki/Trie
+
+测试方法：
+在标准输入中输入一段英文，按Ctrl + D显示结果并退出。
+
+代码说明：
+该示例代码为词频统计的示例代码，其中，
+TREE_WIDTH 为256，表示可处理的字符为所有的ascii码
+

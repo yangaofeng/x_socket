@@ -1,0 +1,10 @@
+strsep函数示例
+
+strsep函数被设计用来替换strtok，strsep的速度更快，但strtok有更好的兼容性。
+
+strsep函数如果遇到分隔符会返回'\0',也就是一个空串。
+注意：空串不是""，而是'\0', 
+      另外，""与'\0'的区别是，""直接引用，代表一个地址，*("") == '\0'
+
+参考url: http://blog.csdn.net/yafeng_jiang/article/details/7109285
+

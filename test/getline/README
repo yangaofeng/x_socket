@@ -1,0 +1,2 @@
+当使用getline读取stdin时，让getline正常结束的方法是,按Ctrl+D键
+
