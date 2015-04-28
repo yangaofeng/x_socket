@@ -1,0 +1,5 @@
+代码来自 man 手册, 演示 timerfd的用法，可以将定时器和select,epoll等io多路复用统一使用。
+
+man timerfd_create
+
+代码同时演示了 clock_gettime 的用法

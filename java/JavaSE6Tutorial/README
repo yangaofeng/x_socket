@@ -6,3 +6,7 @@ package目录说明：
 演示package的使用
 Point2DDemo3目录下，演示了源代码和编译出的.class文件分离以及jar的打包和导入。
 
+
+reflection目录说明：
+演示java反射机制。
+

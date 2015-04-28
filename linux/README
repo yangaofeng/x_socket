@@ -1,0 +1,9 @@
+uuid 演示linux下uuid相关函数的用法
+backtrace 演示打印函数调用栈
+
+eventfd 演示linux新型api eventfd的用法，eventfd可以取代pipe用来做事件通知，将事件通知统一到select,epoll等io多路复用模型中。
+signalfd 演示linux新型api signalfd的用法，signalfd和eventfd类似，用来做信号通知，可以将信号处理统一到select,epoll等io多路复用模型中。 
+timerfd 演示linux新型api timerfd的用法，timerfd和eventfd类似，用来做定时器通知，可以将定时器处理统一到select,epoll等io多路复用模型中。 
+
+process目录下演示了守护进程，进程组，会话的api调用。
+
