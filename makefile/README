@@ -1,0 +1,8 @@
+Makefile 文件模板
+通用的Makefile文件，可以用在很多地方，稍做修改就能应用到多种场景
+
+Makefile 适用于C++
+makefile 适用于c
+
+编译当前目录的测试代码时，请使用 make -f Makefile 来指定Makefile编译C++代码。
+
