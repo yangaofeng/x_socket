@@ -1,0 +1,4 @@
+参考：http://www.ibm.com/developerworks/cn/linux/thread/posix_threadapi/part2/
+
+该代码演示线程本地存储api的用法,看代码直接能懂。
+

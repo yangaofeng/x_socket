@@ -1,0 +1,4 @@
+一个简单的使用sendfile发送文件的tcp server，测试时请使用SocketTool.exe或其它工具。
+
+不要忘记 SocketTool.exe windows下网络工具的使用
+
