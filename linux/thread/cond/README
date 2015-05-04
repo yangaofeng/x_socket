@@ -1,0 +1,10 @@
+使用1个互斥锁和两个条件变量实现 生产者/消费者 模型
+
+注意：这段代码使用了两个条件变量，好像比使用一个条件变量性能要好。
+
+url: http://blog.csdn.net/whuqin/article/details/9254333
+
+其它：
+C语言版本的实现
+http://www.cnblogs.com/clover-toeic/p/4029269.html
+
