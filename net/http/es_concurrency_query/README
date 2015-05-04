@@ -1,0 +1,8 @@
+elasticsearch并发查询测试程序。
+
+usage example:
+
+./aggs 'http://localhost:9200/skyeye-2015.03.11/_search?search_type=count&pretty' \* 1
+
+代码中使用了libcurl库发起http请求，可以作为libcurl的示例代码使用
+

@@ -1,0 +1,45 @@
+elasticsearch分布式全文检索引擎doc_values性能测试代码
+
+随机生成10万个ip地址并写入es，用来做doc_values的聚合性能测试。
+最好在一个独立的es集群中测试
+
+请按照以下步骤操做:
+
+1、create_index.sh 
+建立ip_test_normal和ip_test_doc_value两个索引, 用法：
+sh create_index.sh
+
+注意：
+create_index.sh会清除ip_test_normal和ip_test_doc_value两个索引
+
+2、DocValue.java 生成ip地址并填充数据到es, 用法：
+(1),编译
+    make
+
+(2),启动
+    sh start.sh
+
+(3),查看入库情况
+    tail -f send.log
+
+3、count.sh 查看索引文档数量, 用法：
+sh count.sh
+
+4、aggs.sh 聚合查询, 用法：
+sh aggs.sh
+
+5、查看fielddata内存状态
+sh fielddata_monitor.sh
+
+6、clear.sh
+清除测试数据
+
+
+
+
+
+
+其它：
+query.sh，闻小东提出的查询需求，耗时比较长，需要优化。
+match.sh,一次匹配多个字段，测试skyeye-dns索引当中重复的字段值，原本以为skyeye-dns当中有很多重复的doc,想对重复的doc做统计，减少数据量，但是从查询结果看，基本没有重复，也就无从减少数据量
+

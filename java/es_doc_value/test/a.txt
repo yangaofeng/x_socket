@@ -1,0 +1,306 @@
+green  open  event-2015.03.30            20 1       7650 0   4.1mb     2mb 
+       close event-2015.02.10                                              
+green  open  skyeye-tcpflow-2015.03.28   20 1  141081705 0 167.9gb  83.9gb 
+green  open  event-2015.03.11            20 1      32771 0  15.4mb   7.7mb 
+       close skyeye-2014.12.21                                             
+       close skyeye-2015.01.25                                             
+green  open  event-2015.03.27            20 1      38161 0  17.6mb   8.8mb 
+       close event-2015.02.17                                              
+green  open  skyeye-sql-2015.03.22       20 1   10500000 0   4.8gb   2.4gb 
+       close event-2015.02.09                                              
+green  open  skyeye-sql-2015.03.18       20 1    5792382 0   2.9gb   1.4gb 
+green  open  skyeye-file-2015.03.30      20 1  122633833 0 112.8gb  56.4gb 
+       close event-2015.03.02                                              
+green  open  skyeye-attack-2015.03.21    20 1   32385000 0  38.4gb  19.2gb 
+       close skyeye-2015.01.03                                             
+green  open  skyeye-clientlog-2015.03.23 20 1     575629 0 252.6mb 126.3mb 
+       close skyeye-2015.02.16                                             
+green  open  skyeye-file-2015.03.26      20 1  214660427 0 177.8gb  88.9gb 
+green  open  skyeye-file-2015.03.27      20 1  172938365 0 150.1gb    75gb 
+       close skyeye-2014.12.30                                             
+green  open  skyeye-mail-2015.03.24      20 1      62214 0  97.2mb  48.6mb 
+       close event-2015.02.11                                              
+       close skyeye-2015.01.17                                             
+green  open  skyeye-attack-2015.03.31    20 1   64702814 0  85.5gb  42.5gb 
+yellow open  skyeye-2015.03.11           20 1 1602779118 0 804.2gb 804.2gb 
+green  open  skyeye-weblog-2015.03.18    20 1   76356912 0  91.2gb  45.6gb 
+green  open  skyeye-2015.03.16           20 1 1558195186 0   1.5tb 768.9gb 
+green  open  skyeye-ldap-2015.03.18      20 1      91463 0  27.2mb  13.6mb 
+       close skyeye-2014.11.21                                             
+green  open  skyeye-attack-2015.03.25    20 1  104208450 0 117.9gb  58.9gb 
+       close skyeye-2015.01.16                                             
+green  open  skyeye-tcpflow-2015.03.24   20 1  181196416 0 239.7gb 119.8gb 
+       close skyeye-2015.02.08                                             
+       close skyeye-2014.11.30                                             
+       close skyeye-2015.03.05                                             
+green  open  skyeye-login-2015.03.29     20 1    2526533 0   1.3gb 709.5mb 
+green  open  skyeye-sql-2015.03.20       20 1    6043114 0   2.2gb   1.1gb 
+       close skyeye-2015.02.27                                             
+green  open  skyeye-attack-2015.03.20    20 1   64828052 0  77.9gb  38.9gb 
+       close skyeye-2014.11.18                                             
+       close skyeye-2014.11.14                                             
+green  open  skyeye-2015.03.15           20 1  922480433 0 749.6gb 374.8gb 
+       close skyeye-2015.02.06                                             
+green  open  skyeye-weblog-2015.03.31    20 1  157436365 0 207.5gb 102.9gb 
+green  open  skyeye-ldap-2015.03.28      20 1     137759 0  45.7mb  22.8mb 
+green  open  skyeye-dns-2015.03.28       20 1  426580817 0 146.6gb  73.3gb 
+green  open  skyeye-sql-2015.03.24       20 1    8966854 0   6.7gb   3.3gb 
+green  open  skyeye-file-2015.03.28      20 1   85885834 0  65.5gb  32.7gb 
+       close skyeye-2015.02.13                                             
+green  open  skyeye-ldap-2015.03.30      20 1     313064 0    95mb  47.5mb 
+green  open  event-2015.03.12            20 1      29545 0  13.8mb   6.9mb 
+green  open  event-2015.03.10            20 1      41276 0  18.6mb   9.3mb 
+green  open  event-2015.03.21            20 1      11280 0   5.8mb   2.9mb 
+green  open  skyeye-ldap-2015.03.24      20 1     378882 0 101.9mb  50.9mb 
+green  open  skyeye-file-2015.03.18      20 1   46120493 0  46.1gb    23gb 
+       close skyeye-2015.02.17                                             
+green  open  skyeye-clientlog-2015.03.30 20 1       6479 0   4.3mb   2.1mb 
+       close skyeye-2014.12.29                                             
+       close skyeye-2015.01.04                                             
+green  open  skyeye-mail-2015.03.20      20 1     134814 0 139.4mb  69.7mb 
+green  open  black_gl                    20 1          0 0   3.7kb   2.2kb 
+       close event-2015.03.05                                              
+green  open  skyeye-attack-2015.03.30    20 1   62986980 0  83.8gb  41.9gb 
+green  open  skyeye-ldap-2015.03.20      20 1     380105 0 101.2mb  50.6mb 
+green  open  skyeye-attack-2015.03.24    20 1   87791871 0  80.6gb  40.3gb 
+       close skyeye-2015.01.09                                             
+       close skyeye-2014.11.26                                             
+       close skyeye-2015.03.07                                             
+green  open  skyeye-login-2015.03.20     20 1    2742245 0   1.4gb   719mb 
+       close skyeye-2014.12.15                                             
+       close skyeye-2015.01.21                                             
+green  open  skyeye-dns-2015.03.20       20 1  340696041 0 111.5gb  55.7gb 
+       close event-2015.02.15                                              
+green  open  skyeye-mail-2015.03.30      20 1      84058 0 125.3mb  62.6mb 
+       close skyeye-2014.12.26                                             
+       close skyeye-2015.01.27                                             
+green  open  skyeye-sql-2015.03.28       20 1    7763297 0   2.3gb   1.1gb 
+green  open  skyeye-dns-2015.03.29       20 1  374926962 0 127.6gb  63.8gb 
+green  open  skyeye-dns-2015.03.31       20 1  329042208 0 128.2gb  64.1gb 
+green  open  skyeye-clientlog-2015.03.22 20 1     460951 0 187.4mb  93.7mb 
+       close skyeye-2015.01.22                                             
+       close event-2015.03.08                                              
+       close skyeye-2015.01.23                                             
+       close skyeye-2015.01.07                                             
+green  open  skyeye-clientlog-2015.03.27 20 1         11 0   195kb  97.8kb 
+       close skyeye-2015.01.08                                             
+green  open  skyeye-sql-2015.03.29       20 1    7911076 0   2.1gb     1gb 
+       close skyeye-2014.12.06                                             
+green  open  skyeye-tcpflow-2015.03.21   20 1   79601000 0  96.9gb  48.4gb 
+       close skyeye-2015.02.01                                             
+red    open  skyeye-2015.03.10           20 1 1468285207 0 747.1gb 747.1gb 
+green  open  skyeye-sql-2015.03.31       20 1    6603102 0   2.7gb   1.3gb 
+green  open  skyeye-tcpflow-2015.03.26   20 1  249039541 0 319.8gb 159.9gb 
+green  open  skyeye-sql-2015.03.21       20 1    5611000 0   3.3gb   1.6gb 
+       close skyeye-2014.12.07                                             
+       close skyeye-2014.12.27                                             
+       close skyeye-2015.02.10                                             
+green  open  skyeye-login-2015.03.21     20 1    1795000 0   968mb   484mb 
+       close skyeye-2015.02.12                                             
+green  open  skyeye-tcpflow-2015.03.31   20 1  152046569 0 208.5gb 103.8gb 
+green  open  skyeye-weblog-2015.03.24    20 1  195561311 0   250gb   125gb 
+green  open  skyeye-ldap-2015.03.25      20 1     412763 0 124.8mb  62.4mb 
+green  open  skyeye-dns-2015.03.18       20 1  143138846 0  45.9gb  22.9gb 
+       close skyeye-2015.01.30                                             
+       close event-2015.02.28                                              
+green  open  skyeye-mail-2015.03.28      20 1      45959 0  60.6mb  30.3mb 
+       close skyeye-2014.11.16                                             
+       close skyeye-2014.12.17                                             
+       close skyeye-2014.11.17                                             
+       close skyeye-2015.03.03                                             
+       close skyeye-2014.12.14                                             
+       close event-2015.02.13                                              
+green  open  skyeye-tcpflow-2015.03.25   20 1  210474858 0 273.3gb 136.6gb 
+       close skyeye-2015.01.14                                             
+       close skyeye-2014.11.15                                             
+       close skyeye-2014.12.13                                             
+       close skyeye-2014.11.23                                             
+green  open  event-2015.03.20            20 1     207012 0 132.9mb  66.4mb 
+       close event-2015.02.08                                              
+green  open  skyeye-file-2015.03.29      20 1   71438703 0  51.5gb  25.7gb 
+       close skyeye-2014.12.25                                             
+green  open  skyeye-weblog-2015.03.25    20 1  256688818 0 301.9gb 150.9gb 
+green  open  event-2015.03.26            20 1      29064 0  13.3mb   6.6mb 
+green  open  skyeye-mail-2015.03.19      20 1     266158 0 310.6mb 155.3mb 
+green  open  skyeye-sql-2015.03.25       20 1   10361853 0   5.8gb   2.9gb 
+green  open  skyeye-weblog-2015.03.30    20 1  184986809 0 207.9gb 103.9gb 
+       close skyeye-2014.11.13                                             
+       close skyeye-2015.01.13                                             
+       close skyeye-2015.01.29                                             
+       close skyeye-2014.12.10                                             
+green  open  event-2015.03.17            20 1      45388 0  19.3mb   9.6mb 
+       close skyeye-2014.11.27                                             
+green  open  skyeye-mail-2015.03.29      20 1      55281 0  68.5mb  34.2mb 
+       close skyeye-2014.12.01                                             
+       close skyeye-2015.01.12                                             
+green  open  skyeye-login-2015.03.18     20 1    2481409 0     1gb 519.1mb 
+       close skyeye-2015.01.28                                             
+green  open  skyeye-tcpflow-2015.03.29   20 1  124200152 0 142.7gb  71.3gb 
+       close event-2015.03.07                                              
+green  open  skyeye-attack-2015.03.27    20 1  101239640 0  95.4gb  47.7gb 
+       close skyeye-2015.01.24                                             
+green  open  skyeye-mail-2015.03.21      20 1      27371 0    36mb    18mb 
+green  open  skyeye-dns-2015.03.22       20 1  509918445 0 156.9gb  78.4gb 
+green  open  skyeye-login-2015.03.30     20 1    3075283 0   1.6gb 859.7mb 
+green  open  event-2015.03.22            20 1      39489 0  17.9mb   8.9mb 
+green  open  skyeye-login-2015.03.22     20 1    3732000 0   1.9gb   986mb 
+green  open  skyeye-mail-2015.03.27      20 1      75062 0 117.7mb  58.8mb 
+green  open  skyeye-mail-2015.03.22      20 1      56492 0  68.1mb    34mb 
+green  open  skyeye-file-2015.03.23      20 1   23353192 0  21.9gb  10.9gb 
+green  open  skyeye-clientlog-2015.03.29 20 1          0 0   3.7kb   2.2kb 
+green  open  skyeye-sql-2015.03.30       20 1    2548000 0 708.2mb 354.1mb 
+green  open  event-2015.03.31            20 1       1793 0   2.7mb   1.3mb 
+green  open  skyeye-tcpflow-2015.03.30   20 1  178270304 0 225.2gb 112.6gb 
+green  open  skyeye-ldap-2015.03.26      20 1     450594 0 134.9mb  67.4mb 
+       close skyeye-2015.01.15                                             
+green  open  skyeye-tcpflow-2015.03.23   20 1   26125144 0  36.4gb  18.2gb 
+       close skyeye-2015.01.31                                             
+green  open  skyeye-clientlog-2015.03.24 20 1    1606836 0 664.8mb 332.4mb 
+       close skyeye-2014.12.03                                             
+       close skyeye-2014.12.19                                             
+green  open  skyeye-ldap-2015.03.31      20 1     351829 0 216.1mb 115.5mb 
+       close skyeye-2015.01.20                                             
+green  open  skyeye-attack-2015.03.23    20 1   12717490 0   9.5gb   4.7gb 
+       close event-2015.02.27                                              
+green  open  skyeye-mail-2015.03.23      20 1       7719 0  16.7mb   8.3mb 
+green  open  skyeye-all-2015.03.18       20 1  795668594 0 695.8gb 347.9gb 
+       close skyeye-2014.12.23                                             
+green  open  skyeye-mail-2015.03.31      20 1      78988 0 271.9mb 135.4mb 
+yellow open  skyeye-2015.03.12           20 1 1576859276 0 765.1gb 765.1gb 
+       close event-2015.03.03                                              
+green  open  skyeye-dns-2015.03.19       20 1  560493373 0 178.6gb  89.3gb 
+green  open  skyeye-attack-2015.03.19    20 1  121644384 0  99.7gb  49.8gb 
+       close skyeye-2014.12.02                                             
+green  open  skyeye-weblog-2015.03.20    20 1  219231290 0 260.3gb 130.1gb 
+green  open  event-2015.03.16            20 1      22993 0  10.9mb   5.4mb 
+green  open  skyeye-ldap-2015.03.22      20 1     142341 0    43mb  21.5mb 
+green  open  skyeye-2015.03.17           20 1 1456609498 0   1.3tb 705.5gb 
+green  open  skyeye-weblog-2015.03.28    20 1  132497703 0 116.8gb  58.4gb 
+       close skyeye-2014.12.24                                             
+green  open  skyeye-weblog-2015.03.27    20 1  292777147 0 315.9gb 157.9gb 
+       close skyeye-2015.01.11                                             
+green  open  skyeye-weblog-2015.03.23    20 1   31993889 0  43.5gb  21.7gb 
+green  open  skyeye-tcpflow-2015.03.27   20 1  229955694 0 296.9gb 148.4gb 
+       close skyeye-2015.03.09                                             
+       close skyeye-2015.02.09                                             
+       close skyeye-2014.12.11                                             
+green  open  skyeye-sql-2015.03.23       20 1    1134808 0   1.1gb 599.2mb 
+green  open  skyeye-login-2015.03.24     20 1    2677494 0   1.3gb   698mb 
+       close skyeye-2015.02.03                                             
+green  open  event-2015.03.14            20 1      13257 0   6.5mb   3.2mb 
+green  open  skyeye-login-2015.03.25     20 1    3061490 0   1.6gb 849.4mb 
+green  open  skyeye-dns-2015.03.24       20 1  378382966 0 123.3gb  61.6gb 
+       close skyeye-2014.12.28                                             
+green  open  skyeye-clientlog-2015.03.26 20 1      11816 0   5.1mb   2.5mb 
+green  open  skyeye-weblog-2015.03.19    20 1  282686902 0 327.3gb 163.6gb 
+       close skyeye-2014.11.22                                             
+green  open  event-2015.03.15            20 1       8633 0   4.6mb   2.3mb 
+       close skyeye-2015.01.02                                             
+       close skyeye-2014.12.31                                             
+       close event-2015.02.04                                              
+green  open  skyeye-attack-2015.03.29    20 1   21993142 0  67.4gb  33.7gb 
+green  open  skyeye-file-2015.03.25      20 1  143367070 0 138.5gb  69.2gb 
+       close skyeye-2014.12.20                                             
+       close event-2015.03.01                                              
+green  open  skyeye-attack-2015.03.18    20 1   40605665 0  29.2gb  14.6gb 
+green  open  event-2015.03.24            20 1      15795 0   8.7mb   4.3mb 
+green  open  skyeye-attack-2015.03.28    20 1   33649571 0  53.5gb  26.7gb 
+       close skyeye-2014.12.09                                             
+green  open  event-2015.03.28            20 1      18091 0     9mb   4.5mb 
+green  open  skyeye-mail-2015.03.26      20 1      80897 0 130.2mb  65.1mb 
+green  open  event-2015.03.25            20 1      19345 0   9.1mb   4.5mb 
+       close skyeye-2015.03.06                                             
+green  open  skyeye-weblog-2015.03.21    20 1   79450000 0  74.1gb    37gb 
+green  open  skyeye-clientlog-2015.03.19 20 1    1821258 0 779.8mb 389.9mb 
+green  open  skyeye-weblog-2015.03.26    20 1  297065004 0 333.2gb 166.6gb 
+       close event-2015.02.07                                              
+green  open  skyeye-clientlog-2015.03.28 20 1          0 0   3.7kb   2.2kb 
+       close skyeye-2015.01.01                                             
+green  open  skyeye-sql-2015.03.19       20 1   14679445 0   5.5gb   2.7gb 
+green  open  skyeye-ldap-2015.03.23      20 1      65977 0  19.4mb   9.7mb 
+       close skyeye-2015.01.18                                             
+green  open  skyeye-clientlog-2015.03.18 20 1      76118 0  43.4mb  21.7mb 
+green  open  event-2015.03.18            20 1      34268 0  15.7mb   7.8mb 
+green  open  skyeye-clientlog-2015.03.25 20 1     694028 0   329mb 164.5mb 
+       close skyeye-2014.12.05                                             
+green  open  skyeye-weblog-2015.03.29    20 1  113889815 0  87.8gb  43.9gb 
+       close skyeye-2014.12.18                                             
+       close skyeye-2014.12.08                                             
+green  open  event-2015.03.29            20 1       9088 0   4.7mb   2.3mb 
+green  open  skyeye-dns-2015.03.26       20 1  561960816 0 201.8gb 100.9gb 
+       close event-2015.03.09                                              
+green  open  skyeye-ldap-2015.03.29      20 1     122506 0  40.8mb  20.4mb 
+       close skyeye-2015.01.06                                             
+green  open  skyeye-tcpflow-2015.03.18   20 1   73597291 0  92.6gb  46.3gb 
+green  open  skyeye-dns-2015.03.30       20 1  426415704 0 153.6gb  76.8gb 
+green  open  skyeye-dns-2015.03.27       20 1  424376691 0 151.3gb  75.6gb 
+green  open  skyeye-file-2015.03.22      20 1  114740000 0  85.7gb  42.8gb 
+green  open  event-2015.03.19            20 1      33964 0  15.8mb   7.9mb 
+       close skyeye-2014.11.19                                             
+       close event-2015.02.14                                              
+       close skyeye-2015.01.05                                             
+       close skyeye-2014.12.04                                             
+green  open  skyeye-tcpflow-2015.03.19   20 1  275395731 0 342.7gb 171.3gb 
+       close event-2015.03.04                                              
+       close skyeye-2015.03.04                                             
+green  open  skyeye-attack-2015.03.26    20 1  114778176 0 126.1gb    63gb 
+       close skyeye-2015.02.11                                             
+green  open  skyeye-login-2015.03.26     20 1    3894640 0   2.1gb     1gb 
+green  open  skyeye-clientlog-2015.03.20 20 1    5916199 0   2.7gb   1.3gb 
+       close skyeye-2014.12.12                                             
+green  open  skyeye-tcpflow-2015.03.20   20 1  179422274 0 232.4gb 116.2gb 
+       close skyeye-2015.02.28                                             
+       close skyeye-2015.02.26                                             
+green  open  skyeye-mail-2015.03.25      20 1     485738 0 291.7mb 145.8mb 
+green  open  skyeye-weblog-2015.03.22    20 1  190875000 0   165gb  82.5gb 
+green  open  skyeye-file-2015.03.31      20 1  105832014 0 109.6gb  56.4gb 
+       close event-2015.02.26                                              
+       close event-2015.02.12                                              
+green  open  skyeye-login-2015.03.27     20 1    3401076 0   1.8gb 951.8mb 
+       close skyeye-2015.02.07                                             
+       close skyeye-2014.11.24                                             
+green  open  skyeye-clientlog-2015.03.21 20 1     275119 0 121.6mb  60.8mb 
+       close skyeye-2015.01.19                                             
+       close event-2015.02.05                                              
+green  open  skyeye-mail-2015.03.18      20 1      52076 0  69.1mb  34.5mb 
+green  open  skyeye-login-2015.03.19     20 1    8597401 0   3.3gb   1.6gb 
+       close skyeye-2015.02.04                                             
+green  open  skyeye-login-2015.03.28     20 1    2805167 0   1.5gb   786mb 
+       close event-2015.02.16                                              
+green  open  skyeye-dns-2015.03.21       20 1  226611127 0  70.3gb  35.1gb 
+green  open  skyeye-tcpflow-2015.03.22   20 1  177664000 0   214gb   107gb 
+       close skyeye-2014.11.20                                             
+green  open  skyeye-2015.03.14           20 1  969561032 0 796.5gb 398.2gb 
+       close skyeye-2014.12.16                                             
+green  open  skyeye-sql-2015.03.26       20 1   12304812 0   6.7gb   3.3gb 
+green  open  skyeye-2015.03.13           20 1 1570506893 0   1.5tb 779.4gb 
+green  open  skyeye-login-2015.03.31     20 1    2648051 0   1.6gb 862.8mb 
+green  open  event-2015.03.13            20 1       4518 0   2.5mb   1.2mb 
+       close event-2015.03.06                                              
+       close skyeye-2014.12.22                                             
+       close skyeye-2015.02.14                                             
+green  open  skyeye-clientlog-2015.03.31 20 1          0 0   3.7kb   2.2kb 
+       close skyeye-2015.02.05                                             
+green  open  skyeye-dns-2015.03.23       20 1   49769205 0  17.1gb   8.5gb 
+green  open  skyeye-dns-2015.03.25       20 1  460217571 0 164.9gb  82.4gb 
+green  open  skyeye-file-2015.03.24      20 1  125184123 0 121.4gb  60.7gb 
+green  open  skyeye-login-2015.03.23     20 1     372785 0 201.8mb 100.9mb 
+green  open  skyeye-ldap-2015.03.21      20 1      84417 0  25.4mb  12.7mb 
+       close event-2015.02.06                                              
+green  open  skyeye-attack-2015.03.22    20 1   77255000 0  76.5gb  38.2gb 
+       close skyeye-2014.11.28                                             
+green  open  event-2015.03.23            20 1      21837 0  10.6mb   5.3mb 
+       close skyeye-2014.11.25                                             
+       close skyeye-2015.03.08                                             
+green  open  skyeye-ldap-2015.03.19      20 1     422520 0 114.5mb  57.2mb 
+       close skyeye-2015.03.02                                             
+green  open  skyeye-file-2015.03.20      20 1  131878642 0 124.3gb  62.1gb 
+green  open  skyeye-file-2015.03.19      20 1  172080668 0 156.4gb  78.2gb 
+green  open  skyeye-sql-2015.03.27       20 1    8821840 0   2.6gb   1.3gb 
+       close skyeye-2015.03.01                                             
+       close skyeye-2015.01.26                                             
+green  open  skyeye-ldap-2015.03.27      20 1     464825 0 138.6mb  69.3mb 
+       close skyeye-2015.02.15                                             
+green  open  skyeye-file-2015.03.21      20 1   49442000 0  41.9gb  20.9gb 
+       close skyeye-2015.01.10                                             
+       close skyeye-2014.11.29                                             
