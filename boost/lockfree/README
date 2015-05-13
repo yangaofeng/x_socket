@@ -1,0 +1,4 @@
+boost lockfree无锁系列
+
+queue 是一个无锁队列，多生产者/多消费者模式
+

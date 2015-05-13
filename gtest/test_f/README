@@ -1,0 +1,6 @@
+演示TEST_F的用法
+
+同时演示了gtest_main库的用法，有了gtest_main之后，不需要在代码中再编写main函数。
+
+加上simple中演示的示例，基本上演示的gtest用法足够在测试过程中使用了。
+

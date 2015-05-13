@@ -3,3 +3,5 @@ local -- 线程本地存储演示
 cond -- 使用条件变量实现的线程安全队列
 
 cond2 -- cond的benchmark测试版本, 去掉了中间过程的cout, 队列大小改为1000个，每秒完成约170万个push或pop操作
+
+gcc_cas -- 演示gcc内建函数compare and set原子操作

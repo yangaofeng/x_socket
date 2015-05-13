@@ -1,0 +1,9 @@
+url:
+http://w-r188.cldiskb.shht.qihoo.net:8360/mediawiki/index.php/MapReduce_User_Manual
+
+map/reduce streaming 版本
+
+注意：
+1、在hadoop中运行的php脚本，第一行必须添加魔数(#！/usr/bin/env php)指定php解释程序，否则无法运行
+2、php默认只能使用128M内存，在hadoop中运行时如果出现内存不够用的错误，请在php脚本中显示的调用设置函数改变默认内存大小
+

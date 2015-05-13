@@ -1,0 +1,5 @@
+If  the  rfd  file  descriptor  has  been  added to the epoll interface using the EPOLLET (edge-triggered) flag, the call to epoll_wait(2) done in step 5 will probably hang despite the available data still
+present in the file input buffer; meanwhile the remote peer might be expecting a response based on the data it already sent.  The reason for this is that  edge-triggered  mode  only  delivers  events  when
+changes  occur on the monitored file descriptor.  So, in step 5 the caller might end up waiting for some data that is already present inside the input buffer.  In the above example, an event on rfd will be
+generated because of the write done in 2 and the event is consumed in 3.  Since the read operation done in 4 does not consume the whole buffer data, the call to epoll_wait(2) done in  step  5  might  block
+indefinitely.

@@ -5,7 +5,7 @@
 #include <iomanip>
 
 const int SIZE = 1000;
-const int NUM = 1000000;
+const int NUM = 10000000;
 
 using namespace std;
 
@@ -113,8 +113,8 @@ int main(int argc, char *argv[])
     pthread_join(pro_thread, NULL);
     pthread_join(con_thread, NULL);
 
-    cout << std::fixed << setprecision(3) << "push used time: " << (float)produce_time / 1000 << "ms" << endl;
-    cout << std::fixed << setprecision(3) << "pop used time: " << (float)consume_time / 1000 << "ms" << endl;
+    cout << std::fixed << setprecision(3) << "push " << NUM << " used time: " << (float)produce_time / 1000 << "ms" << endl;
+    cout << std::fixed << setprecision(3) << "pop " << NUM << " used time: " << (float)consume_time / 1000 << "ms" << endl;
     float avg = (float)(produce_time + consume_time) / 2 / 1000;
     cout << std::fixed << setprecision(3) << "average used time: " << avg << "ms" << endl;
 
