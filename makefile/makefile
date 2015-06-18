@@ -1,13 +1,17 @@
 SRC=$(wildcard *.c)
 OBJ=$(SRC:%.c=%.o)
-TARGET=hello
+TARGET=test
+#TARGET=test.so # for make  so
 
 
 CFLAGS := -g -O0 -I./
+#CXXFLAGS := -g -O0 -fPIC -Wall
 LDFLAGS := 
+#LDFLAGS := -Wl,-rpath=/home/s/lib
 
 $(TARGET): $(OBJ)
 	$(CC) $(LDFLAGS) $^ -o $@
+#	$(CXX) -shared $(LDFLAGS) $^ -o $@ # for make so
 
 %.o: %.c
 	$(CC) $(CFLAGS) $< -c -o $@

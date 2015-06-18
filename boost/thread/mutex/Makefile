@@ -1,17 +1,14 @@
 SRC=$(wildcard *.cc)
 OBJ=$(SRC:%.cc=%.o)
 TARGET=test
-#TARGET=test.so # for make  so
 
 
-CXXFLAGS := -g -O0 -I./
-#CXXFLAGS := -g -O0 -fPIC -Wall
-LDFLAGS := 
+CXXFLAGS := -g -O0 -I./ -I/usr/include/boost141
+LDFLAGS := -L/usr/lib64/boost141/ -lboost_thread-mt
 #LDFLAGS := -Wl,-rpath=/home/s/lib
 
 $(TARGET): $(OBJ)
 	$(CXX) $(LDFLAGS) $^ -o $@
-#	$(CXX) -shared $(LDFLAGS) $^ -o $@ # for make so
 
 %.o: %.cc
 	$(CXX) $(CXXFLAGS) $< -c -o $@
