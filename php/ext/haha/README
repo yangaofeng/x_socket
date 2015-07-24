@@ -1,0 +1,6 @@
+演示php扩展中生成对象并返回对象的用法。
+
+test.php中有一些用法说明
+
+php -c php.ini test.php
+

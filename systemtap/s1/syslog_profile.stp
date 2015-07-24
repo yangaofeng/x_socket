@@ -1,0 +1,19 @@
+global syscalllist
+
+probe begin {
+    printf("Syslog Monitoring Started (10 seconds)...\n")
+}
+
+probe syscall.*
+{
+    if (execname() == "qlogd") {
+        syscalllist[name]++
+    }
+}
+
+probe timer.ms(10000) {
+    foreach ( name in syscalllist ) {
+        printf("%s = %d\n", name, syscalllist[name] )
+    }
+    exit()
+}

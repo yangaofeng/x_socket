@@ -1,2 +1,5 @@
 url: http://www.ibm.com/developerworks/cn/linux/l-cn-perf1/
 
+malloc和free目录： 使用strace跟踪系统启用，使用perf监视系统调用
+
+t1,t2,t3目录测试性能用

@@ -1,0 +1,16 @@
+演示php调用c++动态连接库
+
+特别注意: car_free_storage 和 car_create_handler 将php对象与c++对象绑定
+php类car只负责调用c++类car，不实现具体功能，相当于代理
+C++类，实现具体功能
+
+编译方法见makefile文件,这里是小写
+
+url: 
+英文原文：
+http://devzone.zend.com/1435/wrapping-c-classes-in-a-php-extension/
+
+中文：
+http://keping.me/php-call-so/
+http://blog.csdn.net/cedricliang/article/details/17382543
+
