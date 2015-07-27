@@ -1,6 +1,9 @@
 // zend_2_cpp.h (2015-07-27)
 // Yan Gaofeng (yangaofeng@360.cn)
 
+#ifndef __ZEND_2_CPP_H__
+#define __ZEND_2_CPP_H__
+
 #include "php_vehicles.h" 
 
 template<class T>
@@ -42,3 +45,18 @@ zend_object_value create_handler(zend_class_entry *type TSRMLS_DC)
 
     return retval;
 }
+
+template <class T>
+void set_co(zval *obj, T *co)
+{
+    ((Zend2Cpp<T> *)zend_object_store_get_object(obj TSRMLS_CC))->co = co;
+}
+
+template <class T>
+T *get_co(zval *obj)
+{
+    return ((Zend2Cpp<T> *)zend_object_store_get_object(obj TSRMLS_CC))->co;
+}
+
+#endif /*__ZEND_2_CPP_H__*/
+

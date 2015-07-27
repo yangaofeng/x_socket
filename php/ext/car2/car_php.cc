@@ -2,48 +2,32 @@
 // Yan Gaofeng (yangaofeng@360.cn)
 
 #include "car.h"
+#include "zend_2_cpp.h"
 
 
 PHP_METHOD(Car, __construct) {
 
     long maxGear;
-    Car *car = NULL;
-    zval *object = getThis();
-
     if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "l", &maxGear) == FAILURE) {
         RETURN_NULL();
     }
 
-    car = new Car(maxGear);
-    Zend2Cpp<Car> *obj = (Zend2Cpp<Car> *)zend_object_store_get_object(object TSRMLS_CC);
-    obj->co = car;
+    set_co<Car>(getThis(), new Car(maxGear));
 } 
 
 PHP_METHOD(Car, shift) {
 } 
 
 PHP_METHOD(Car, accelerate) {
-    Car *car;
-    Zend2Cpp<Car> *obj = (Zend2Cpp<Car> *)zend_object_store_get_object(
-            getThis() TSRMLS_CC);
-    car = obj->co;
-    if (car != NULL) {
-        car->accelerate();
-    }
+    get_co<Car>(getThis())->accelerate();
 } 
 
 PHP_METHOD(Car, brake) {
 } 
 
 PHP_METHOD(Car, getCurrentSpeed) {
-    Car *car;
-    Zend2Cpp<Car> *obj = (Zend2Cpp<Car> *)zend_object_store_get_object(
-            getThis() TSRMLS_CC);
-    car = obj->co;
-    if (car != NULL) {
-        RETURN_LONG(car->getCurrentSpeed());
-    }
-    RETURN_NULL();
+    int speed = get_co<Car>(getThis())->getCurrentSpeed();
+    RETURN_LONG(speed);
 } 
 
 PHP_METHOD(Car, getCurrentGear) {
