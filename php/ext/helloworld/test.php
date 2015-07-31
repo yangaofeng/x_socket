@@ -20,5 +20,9 @@ echo "非引用调用，a=", $a, "\n";
 ref_call(&$a);
 echo "引用调用，a=", $a, "\n";
 
+//使用hashtable api 操作数组
+$hash_array = hashtable_array();
+var_dump($hash_array);
+
 ?>
 

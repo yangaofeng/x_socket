@@ -47,6 +47,7 @@ PHP_FUNCTION(create_foo);
 PHP_FUNCTION(return_string);
 PHP_FUNCTION(ref_call);
 PHP_FUNCTION(return_array);
+PHP_FUNCTION(hashtable_array);
 
 /* 
   	Declare any global variables you may need between the BEGIN

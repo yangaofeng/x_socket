@@ -1,4 +1,10 @@
 变量创建，返回变量，返回数组，引用调用等
 
+使用hashtable api创建数组，在数组中查找等。
+
 测试命令：
 php -c php.ini ./test.php
+
+参见：
+http://www.walu.cc/phpbook/preface.md
+第6节
