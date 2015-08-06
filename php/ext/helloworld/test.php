@@ -14,11 +14,15 @@ var_dump(return_array());
 //测试引用调用
 $a = "hello";
 
-ref_call($a);
-echo "非引用调用，a=", $a, "\n";
+call_time_ref_call($a);
+echo "运行时非引用调用，a=", $a, "\n";
 
-ref_call(&$a);
-echo "引用调用，a=", $a, "\n";
+call_time_ref_call(&$a);
+echo "运行时引用调用，a=", $a, "\n";
+
+$a = "hello";
+compile_time_ref_call($a);
+echo "编译时引用调用，a=", $a, "\n";
 
 //使用hashtable api 操作数组
 $hash_array = hashtable_array();

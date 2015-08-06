@@ -7,6 +7,8 @@
 class Car {
 public:
     Car(int maxGear);
+    ~Car();
+
     void shift(int gear);
     void accelerate();
     void brake();
