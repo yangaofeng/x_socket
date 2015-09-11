@@ -2,6 +2,11 @@
 
 注意：这段代码使用了两个条件变量，好像比使用一个条件变量性能要好。
 
+之所以使用两个条件变量，是为了判断两个不同的条件，一个条件变量对应一个条件,
+比如:
+notfull_条件变量对应is_full条件
+notempty_条件变量对应is_empty条件
+
 url: http://blog.csdn.net/whuqin/article/details/9254333
 
 其它：
