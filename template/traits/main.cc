@@ -1,6 +1,10 @@
 // main.cc (2013-07-09)
 // Yan Gaofeng (yangaofeng@360.cn)
 
+/*
+ * 本示例来自《C++ Templates》候捷译
+ * 电子版在360云盘里边
+ * */
 #include <iostream>
 #include "accum2.h"
 
