@@ -1,0 +1,16 @@
+c++ 版wordcount示例程序, 已经在hadoop上做了测试
+
+用法：
+
+1、创建hadoop目录并将数据文件put到hadoop
+
+hadoop fs -mkdir /home/yangaofeng/wordcount/data
+hadoop fs -put data/*  /home/yangaofeng/wordcount/data
+
+2、运行map/reduce
+
+创建wordcount.sh用到的输出目录
+hadoop fs -mkdir /home/yangaofeng/wordcount/result
+
+sh ./wordcount.sh
+
