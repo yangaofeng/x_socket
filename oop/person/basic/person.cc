@@ -19,6 +19,7 @@ std::string Person::name() const
 
 int Person::age() const 
 {
+    int a = 1;
     return age_;
 }
 

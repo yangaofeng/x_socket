@@ -17,6 +17,7 @@ public:
 private:
     std::string name_;
     int age_;
+    bool male_;
 };
 
 #endif /*__PERSON_IMPL_H__*/
