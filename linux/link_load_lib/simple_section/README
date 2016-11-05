@@ -1,0 +1,33 @@
+第3章
+
+只编译不连接：
+gcc -c simple_section.c
+生成文件simple_section.o
+
+用objdump命令查看段信息:
+objdump -h simple_section.o
+
+用size命令查看段长度信息:
+size simple_section.o
+
+用objdump命令-s参数查看段的十六进制数据,用-d参数反汇编代码段：
+objdump -s -d simple_section.o
+
+用objdump命令的 -x 参数查看所以有header信息，包括符号表和重定位数据：
+objdump -x -s -d simple_section.o
+
+使用objcopy命令可以将数据存储到elf文件中,但不能使用"."作为前缀,因为系统在使用
+
+使用 readelf -h 可以查看文件头:
+readelf -h simple_section.o
+elf文件的文件头结构及相关数据被定义在"/usr/include/elf.h"里
+
+使用readelf -S (注意是大写)查看文件的段，它显示出来的结果比objdump -h要全的多:
+readelf -S simple_section.o
+
+使用nm命令来查看符号信息
+nm simple_section.o
+
+使用readelf -s (注意是小写)查看符号表：
+readelf -s simple_section.o
+特别注意第一个符号永远是一个未定义符号,这是elf文件格式规定的

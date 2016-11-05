@@ -12,3 +12,6 @@ thread目录下演示和线程相关的api调用,如线程本地存储
 so 目录下演示动态库的编写和动态库的编译,这个示例来自qlog项目，dynamicappender加载的动态库测试代码，可以使用dlopen,dlsym加载其中的函数
 
 so_soname 演示soname的用法，解析了主版本号，次版本号，debug版本号的用法,url:http://www.cnblogs.com/zhyg6516/archive/2011/01/01/1923789.html
+
+a 演示静态库的生成和使用,示例来自程序员的自称修养--链接、装载和库
+
