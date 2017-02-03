@@ -1,0 +1,4 @@
+用法：
+
+./auto_scp.sh  <local_file> <host_list_file> <dest_dir>
+
