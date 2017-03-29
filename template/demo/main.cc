@@ -17,7 +17,7 @@ void swap(T &a, T &b) {
 //显示实例化：
 template void swap<int>(); //无须给该函数重新编写函数体，这只是个声明, 注意：template后没有尖括号<>，函数名后有尖括号
 //为什么要显示实例化？主要是提高编译器效率。
-//template void swap<int>();声明相当在在本程序文件里有一个
+//template void swap<int>();声明相当于在本程序文件里有一个函数
 //void swap(int &a, int &b) {
 //  int temp;
 //  temp = a;
@@ -81,7 +81,7 @@ private:
 //template <class T, class Allocator>
 //class vector {...}
 //
-//特化版本
+//偏特化版本
 //template <class Allocator>            //注意template后的尖括号中只有一个参数，而不是两个
 //class vector<bool, Allocator> {...};  //类名vector后的尖括号中中有两个参数，bool就是特化的类型，Alloctor还是需要用户指定
 

@@ -27,6 +27,19 @@ int main(int argc, char *argv[])
     sha1_file(filename, &hexsha1);
     cout << "file sha1: " << hexsha1 << endl;
 
+    uint8_t bin[4] = {8, 9, 10, 11};
+    std::string hex_str;
+    bin2hex(bin, 4, &hex_str);
+    cout << "8, 9, 10, 11 hex string: " << hex_str << endl;
+
+    std::string ori_bin;
+    hex2bin(hex_str.data(), hex_str.size(), &ori_bin);
+    cout << "8, 9, 10, 11 ori string: ";
+    for (int i = 0; i < 4; i++) {
+        cout << (int)ori_bin[i] << " ";
+    }
+    cout << endl;
+
     return 0;
 }
 

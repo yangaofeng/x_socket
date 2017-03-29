@@ -1,8 +1,10 @@
 c++模板学习示例
 
+demo, 模板基本语法演示, 实例化, 显示实例化, 特化, 偏特化等概念
 stack，基本的模板演示
 static_member，静态模板成员，一个类型一个静态成员变量，没什么意义
 partial 偏特化演示
 traits 技术演示
 override 函数模板重载演示
 class_override 类模板重载演示
+factorial 模板元编程, 演示用模板计算阶乘

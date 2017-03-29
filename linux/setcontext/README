@@ -1,0 +1,9 @@
+url: http://blog.csdn.net/qq910894904/article/details/41911175
+
+程序在输出第一个“Hello world"后并没有退出程序，而是持续不断的输出”Hello world“。其
+实是程序通过getcontext先保存了一个上下文,然后输出"Hello world",
+在通过setcontext恢复到getcontext的地方，
+重新执行代码，所以导致程序不断的输出”Hello world“
+
+注意第5行的说明, 上述url文章已保存到evernote
+

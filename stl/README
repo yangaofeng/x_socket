@@ -1,0 +1,4 @@
+unordered_map:
+演示key的优化方法, 自定义的key, 比std::string要节省一半的内存
+具体的原因还没有完全搞清楚, 需要细看std::string的源代码
+

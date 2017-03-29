@@ -8,6 +8,7 @@
 #include <string>
 
 void bin2hex(const uint8_t *bin, int len, std::string *hexmd5);
+void hex2bin(const char *str, int str_len, std::string *bin);
 
 void md5(const char* data, size_t len, std::string* hexmd5);
 void md5_file(const char *filename, std::string *hexmd5);
