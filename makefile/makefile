@@ -1,30 +1,30 @@
-SRC=$(wildcard *.c)
-OBJ=$(SRC:%.c=%.o)
+SRC=$(wildcard *.cc)
+OBJ=$(SRC:%.cc=%.o)
 TARGET=test
 #TARGET=test.so # for make  so
 
 
-CFLAGS := -g -O0 -I./
+CXXFLAGS := -g -O0 -I./
 #CXXFLAGS := -g -O0 -fPIC -Wall
 LDFLAGS := 
 #LDFLAGS := -Wl,-rpath=/home/s/lib
 
 $(TARGET): $(OBJ)
-	$(CC) $(LDFLAGS) $^ -o $@
+	$(CXX) $(LDFLAGS) $^ -o $@
 #	$(CXX) -shared $(LDFLAGS) $^ -o $@ # for make so
 
-%.o: %.c
-	$(CC) $(CFLAGS) $< -c -o $@
+%.o: %.cc
+	$(CXX) $(CXXFLAGS) $< -c -o $@
 
-%.d: %.c
-	@$(CC) -MM $(CFLAGS) $< > $@.$$$$; \
+%.d: %.cc
+	@$(CXX) -MM $(CXXFLAGS) $< > $@.$$$$; \
 		sed 's,\($*\)\.o[ :]*,\1.o $@ : ,g' < $@.$$$$ > $@; \
 		rm -f $@.$$$$
 
-sinclude $(SRC:.c=.d)
+sinclude $(SRC:.cc=.d)
 
 .PHONY: clean
 
 clean:
-	rm $(TARGET) $(OBJ) *.d -f
+	@rm $(TARGET) $(OBJ) *.d -f
 
